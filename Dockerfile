@@ -1,4 +1,5 @@
-FROM golang:1.23
+FROM golang:1.23.1-alpine
+RUN apk add make
 WORKDIR /src
 COPY src /src
 RUN make
